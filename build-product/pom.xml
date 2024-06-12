@@ -14,17 +14,6 @@
 		<version>1.1.0</version>
 	</parent>
 
-	
-	
-
-	<prerequisites>
-		<maven>3.0</maven>
-	</prerequisites>
-
-	<properties>
-		<tycho.version>2.4.0</tycho.version>
-	</properties>
-
 	<profiles>
 
 		<profile>
@@ -36,7 +25,7 @@
 
 			<build>
 				<plugins>
-				
+
 				    <!-- plugin>
 				        <groupId>org.sonatype.tycho</groupId>
 				        <artifactId>maven-osgi-packaging-plugin</artifactId>
@@ -47,7 +36,7 @@
 				          </archive>
 				        </configuration>
 				      </plugin -->
-				      
+
 					<plugin>
 						<!-- enable tycho build extension -->
 						<groupId>org.eclipse.tycho</groupId>
@@ -70,8 +59,8 @@
 							</execution>
 						</executions>
 						<configuration>
-							<!-- from import package maven can lookup bundle from all repositorys 
-								declare on target platform, also maven local so default generated site-p2 
+							<!-- from import package maven can lookup bundle from all repositorys
+								declare on target platform, also maven local so default generated site-p2
 								don't include that bundle. this configuration change default behavior -->
 							<includeAllDependencies>true</includeAllDependencies>
 							<!-- https://bugs.eclipse.org/bugs/show_bug.cgi?id=512396 -->
@@ -102,10 +91,10 @@
                             <installFeatures>true</installFeatures>
 							<products>
 								<product>
-									<!-- The uid in the .product file, NOT the name of the .product 
+									<!-- The uid in the .product file, NOT the name of the .product
 										file -->
 									<id>terraarch</id>
-									<!-- select product with ID product.id; the archives get the classifiers 
+									<!-- select product with ID product.id; the archives get the classifiers
 										"<os>.<ws>.<arch>" -->
 									<!-- attachId>other-linux-gtk-x86_64</attachId -->
 								</product>
@@ -123,4 +112,4 @@
 
 	</profiles>
 
-</project>  
+</project>

@@ -31,7 +31,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.jgit,
  org.eclipse.text.quicksearch;bundle-version="1.0.400",
  org.eclipse.osgi.services,
- org.slf4j.api
+ slf4j.api
 Automatic-Module-Name: net.TerraArch.editor
 Bundle-ClassPath: editor.jar
 Bundle-RequiredExecutionEnvironment: JavaSE-11

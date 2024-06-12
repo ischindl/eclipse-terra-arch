@@ -18,7 +18,7 @@ public class TerraAarchTest {
 
 	@Test
 	public void testItem() {
-		
+
 		SWTWorkbenchBot bot = new SWTWorkbenchBot();
 		SWTBotShell[] shells = bot.shells();
 		boolean found = false;
@@ -30,7 +30,7 @@ public class TerraAarchTest {
 			}
 		}
 		assertTrue(found);
-		 
+
 	}
-	
+
 }
